@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nội dung — MinhLee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">MinhLee</a>
+      <ul class="nav-links">
+        <li><a href="about.html">Về tôi</a></li>
+        <li><a href="content.html" class="nav-active">Nội dung</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="collab.html">Hợp tác</a></li>
+        <li><a href="index.html#follow" class="btn-nav">Follow ngay</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:1;">
+      <span class="section-label">Nội dung TikTok</span>
+      <h1 class="page-hero-title">Cuộc sống của tôi —<br /><em>không cắt ghép</em></h1>
+      <p class="page-hero-sub">Clip mới mỗi ngày về công việc, âm nhạc, thời trang và những khoảnh khắc đời thường thật nhất.</p>
+      <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" class="btn-primary" target="_blank" rel="noopener noreferrer" style="margin-top:24px;">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+        Xem tất cả trên TikTok
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTENT CATEGORIES -->
+  <section class="content-cats bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Chủ đề nội dung</span>
+        <h2 class="section-title">Tôi chia sẻ <em>những gì</em>?</h2>
+      </div>
+      <div class="cat-filter">
+        <button class="filter-btn active" data-filter="all">Tất cả</button>
+        <button class="filter-btn" data-filter="acting">🎬 Diễn xuất</button>
+        <button class="filter-btn" data-filter="fashion">👗 Thời trang</button>
+        <button class="filter-btn" data-filter="music">🎵 Âm nhạc</button>
+        <button class="filter-btn" data-filter="daily">☕ Đời thường</button>
+      </div>
+      <div class="clips-grid" id="clipsGrid">
+
+        <div class="clip-card" data-category="acting">
+          <div class="clip-thumb">
+            <img src="https://placehold.co/400x500/FFE4EC/FF6B9D?text=🎬+Hậu+trường" alt="Hậu trường phim" />
+            <div class="clip-play">▶</div>
+            <div class="clip-overlay">
+              <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" target="_blank" rel="noopener noreferrer" class="clip-watch">Xem trên TikTok</a>
+            </div>
+          </div>
+          <div class="clip-info">
+            <div class="clip-cat-tag acting">🎬 Diễn xuất</div>
+            <h3>Hậu trường phim — ngày quay cảnh cảm xúc nhất</h3>
+            <p>Cái cảm giác khi director nói "cut, perfect" sau 20 takes... không có gì tả được.</p>
+            <div class="clip-products">
+              <span class="clip-products-label">Sản phẩm trong clip:</span>
+              <div class="clip-product-chips">
+                <a href="shop.html" class="clip-chip">💄 Son berry đỏ</a>
+                <a href="shop.html" class="clip-chip">👗 Váy hoa nhí</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clip-card" data-category="fashion">
+          <div class="clip-thumb">
+            <img src="https://placehold.co/400x500/E8F4FD/6CB4E4?text=👗+Shop+Vlog" alt="Shop vlog" />
+            <div class="clip-play">▶</div>
+            <div class="clip-overlay">
+              <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" target="_blank" rel="noopener noreferrer" class="clip-watch">Xem trên TikTok</a>
+            </div>
+          </div>
+          <div class="clip-info">
+            <div class="clip-cat-tag fashion">👗 Thời trang</div>
+            <h3>Một ngày ở shop — từ sáng đến khi khóa cửa</h3>
+            <p>Nhập hàng mới, tư vấn cho khách, unbox BST thu đông — bận nhưng vui!</p>
+            <div class="clip-products">
+              <span class="clip-products-label">Sản phẩm trong clip:</span>
+              <div class="clip-product-chips">
+                <a href="shop.html" class="clip-chip">👗 Váy hoa nhí</a>
+                <a href="shop.html" class="clip-chip">👜 Túi da mini</a>
+                <a href="shop.html" class="clip-chip">👖 Quần wide leg</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clip-card" data-category="music">
+          <div class="clip-thumb">
+            <img src="https://placehold.co/400x500/FFF5E4/F6AD55?text=🎵+Cover+Song" alt="Cover song" />
+            <div class="clip-play">▶</div>
+            <div class="clip-overlay">
+              <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" target="_blank" rel="noopener noreferrer" class="clip-watch">Xem trên TikTok</a>
+            </div>
+          </div>
+          <div class="clip-info">
+            <div class="clip-cat-tag music">🎵 Âm nhạc</div>
+            <h3>Cover "Tôi thấy hoa vàng trên cỏ xanh" — guitar acoustic</h3>
+            <p>Bản nhạc này tôi tập mấy tuần mới được. Cảm ơn mọi người đã kiên nhẫn nghe demo đấy.</p>
+            <div class="clip-products">
+              <span class="clip-products-label">Sản phẩm trong clip:</span>
+              <div class="clip-product-chips">
+                <a href="shop.html" class="clip-chip">🎸 Pick đàn guitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clip-card" data-category="daily">
+          <div class="clip-thumb">
+            <img src="https://placehold.co/400x500/F0FFF4/68D391?text=☕+Morning+Vlog" alt="Morning vlog" />
+            <div class="clip-play">▶</div>
+            <div class="clip-overlay">
+              <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" target="_blank" rel="noopener noreferrer" class="clip-watch">Xem trên TikTok</a>
+            </div>
+          </div>
+          <div class="clip-info">
+            <div class="clip-cat-tag daily">☕ Đời thường</div>
+            <h3>Buổi sáng của tôi trước khi ngày bắt đầu</h3>
+            <p>6am, cà phê sữa đá, sổ tay và 30 phút yên tĩnh trước khi mọi thứ bùng nổ.</p>
+            <div class="clip-products">
+              <span class="clip-products-label">Sản phẩm trong clip:</span>
+              <div class="clip-product-chips">
+                <a href="shop.html" class="clip-chip">📓 Sổ tay journal</a>
+                <a href="shop.html" class="clip-chip">💧 Bình giữ nhiệt</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clip-card" data-category="acting">
+          <div class="clip-thumb">
+            <img src="https://placehold.co/400x500/EEF2FF/818CF8?text=🎬+Thử+Vai" alt="Thử vai" />
+            <div class="clip-play">▶</div>
+            <div class="clip-overlay">
+              <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" target="_blank" rel="noopener noreferrer" class="clip-watch">Xem trên TikTok</a>
+            </div>
+          </div>
+          <div class="clip-info">
+            <div class="clip-cat-tag acting">🎬 Diễn xuất</div>
+            <h3>Quá trình thử vai cho dự án phim mới</h3>
+            <p>Từ đọc kịch bản đến buổi casting cuối cùng — hành trình không phải lúc nào cũng dễ.</p>
+            <div class="clip-products">
+              <span class="clip-products-label">Sản phẩm trong clip:</span>
+              <div class="clip-product-chips">
+                <a href="shop.html" class="clip-chip">💄 Son berry đỏ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clip-card" data-category="music">
+          <div class="clip-thumb">
+            <img src="https://placehold.co/400x500/FDF2F8/E879F9?text=🎹+Tập+Piano" alt="Tập piano" />
+            <div class="clip-play">▶</div>
+            <div class="clip-overlay">
+              <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" target="_blank" rel="noopener noreferrer" class="clip-watch">Xem trên TikTok</a>
+            </div>
+          </div>
+          <div class="clip-info">
+            <div class="clip-cat-tag music">🎵 Âm nhạc</div>
+            <h3>Nửa đêm tập piano — bản nhạc phim yêu thích</h3>
+            <p>Khi không ngủ được thì ra đàn. Có vẻ như đây là thói quen khó bỏ của tôi rồi.</p>
+            <div class="clip-products">
+              <span class="clip-products-label">Sản phẩm trong clip:</span>
+              <div class="clip-product-chips">
+                <a href="shop.html" class="clip-chip">🎙️ Micro cài áo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TikTok CTA -->
+  <section class="follow">
+    <div class="follow-blob"></div>
+    <div class="container">
+      <div class="follow-inner">
+        <span class="section-label light">Theo dõi ngay</span>
+        <h2 class="follow-title">Còn rất nhiều clip<br />đang chờ bạn trên TikTok!</h2>
+        <p class="follow-sub">Đây chỉ là một phần nhỏ — trên TikTok còn hàng trăm clip khác đang chờ bạn khám phá.</p>
+        <div class="social-buttons">
+          <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" class="social-btn tiktok" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+            Follow TikTok @minh.lee.nhaconoc
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">MinhLee</span>
+          <p>AI KOL · Actress · Model · Singer · Fashion</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">Về tôi</a>
+          <a href="content.html">Nội dung</a>
+          <a href="shop.html">Shop</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="collab.html">Hợp tác</a>
+          <a href="mailto:leeminh1204@gmail.com">Liên hệ</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" aria-label="TikTok" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/183ih5qR2s/" aria-label="Facebook" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 MinhLee AI KOL. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

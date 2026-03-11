@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — MinhLee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">MinhLee</a>
+      <ul class="nav-links">
+        <li><a href="about.html">Về tôi</a></li>
+        <li><a href="content.html">Nội dung</a></li>
+        <li><a href="shop.html" class="nav-active">Shop</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="collab.html">Hợp tác</a></li>
+        <li><a href="index.html#follow" class="btn-nav">Follow ngay</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:1;">
+      <span class="section-label">Shop của MinhLee</span>
+      <h1 class="page-hero-title">Những thứ tôi đang dùng<br />&amp; <em>yêu thích</em></h1>
+      <p class="page-hero-sub">Tất cả sản phẩm xuất hiện trong các clip — mua ngay trên Shopee hoặc TikTok Shop.</p>
+      <div class="shop-platform-btns" style="justify-content:center; margin-top:24px;">
+        <a href="#" class="platform-btn shopee-full" target="_blank" rel="noopener noreferrer">
+          Shopee Shop của tôi
+        </a>
+        <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" class="platform-btn tiktok-full" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+          TikTok Shop
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section class="shop-section" style="padding-top: 60px;">
+    <div class="container">
+
+      <!-- Search + Filter -->
+      <div class="shop-toolbar">
+        <div class="shop-search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="text" id="shopSearch" placeholder="Tìm sản phẩm..." class="shop-search" />
+        </div>
+        <div class="shop-filters">
+          <button class="filter-btn active" data-filter="all">Tất cả</button>
+          <button class="filter-btn" data-filter="fashion">👗 Thời trang</button>
+          <button class="filter-btn" data-filter="beauty">💄 Làm đẹp</button>
+          <button class="filter-btn" data-filter="lifestyle">🌿 Lifestyle</button>
+          <button class="filter-btn" data-filter="music">🎵 Âm nhạc</button>
+        </div>
+      </div>
+
+      <p class="product-count" id="productCount">Đang hiển thị <strong>12</strong> sản phẩm</p>
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- FASHION -->
+        <div class="product-card" data-category="fashion" data-name="váy hoa nhí dáng xòe">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/FFE4EC/FF6B9D?text=Váy+Hoa+Nhí" alt="Váy Hoa Nhí" class="product-img" />
+            <div class="product-badge">MinhLee wore</div>
+          </div>
+          <div class="product-info">
+            <h4>Váy hoa nhí dáng xòe</h4>
+            <p class="product-desc">Mặc trong clip vlog ngày ở shop</p>
+            <div class="product-price">299.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="fashion" data-name="áo croptop denim wash">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/E8F4FD/6CB4E4?text=Áo+Croptop" alt="Áo Croptop" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h4>Áo croptop denim wash</h4>
+            <p class="product-desc">Outfit đi chụp ảnh ngoại cảnh</p>
+            <div class="product-price">189.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="fashion" data-name="túi da mini dáng chữ nhật">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/FFF5E4/F6AD55?text=Túi+Da+Mini" alt="Túi da mini" class="product-img" />
+            <div class="product-badge">MinhLee wore</div>
+          </div>
+          <div class="product-info">
+            <h4>Túi da mini dáng chữ nhật</h4>
+            <p class="product-desc">Outfit street style clip triệu view</p>
+            <div class="product-price">450.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="fashion" data-name="quần wide leg kẻ sọc">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/EEF2FF/818CF8?text=Quần+Wide+Leg" alt="Quần wide leg" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h4>Quần wide leg kẻ sọc</h4>
+            <p class="product-desc">Mặc trong clip đi café sáng</p>
+            <div class="product-price">265.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEAUTY -->
+        <div class="product-card" data-category="beauty" data-name="son lì màu berry đỏ">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/FFF0F5/FF69B4?text=Son+Môi" alt="Son môi" class="product-img" />
+            <div class="product-badge">MinhLee wore</div>
+          </div>
+          <div class="product-info">
+            <h4>Son lì màu berry đỏ</h4>
+            <p class="product-desc">Màu son tôi hay dùng khi diễn</p>
+            <div class="product-price">320.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="beauty" data-name="kem dưỡng ẩm collagen">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/F5F0FF/9B7FE8?text=Kem+Dưỡng" alt="Kem dưỡng" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h4>Kem dưỡng ẩm collagen</h4>
+            <p class="product-desc">Skincare routine buổi tối của tôi</p>
+            <div class="product-price">275.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="beauty" data-name="phấn phủ kiềm dầu">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/FFF8E7/F6AD55?text=Phấn+Phủ" alt="Phấn phủ" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h4>Phấn phủ kiềm dầu</h4>
+            <p class="product-desc">Dùng khi quay clip ngoài trời</p>
+            <div class="product-price">198.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- LIFESTYLE -->
+        <div class="product-card" data-category="lifestyle" data-name="nến thơm lavender">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/F0FFF4/68D391?text=Nến+Thơm" alt="Nến thơm" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h4>Nến thơm lavender</h4>
+            <p class="product-desc">Bí quyết phòng làm việc dễ chịu</p>
+            <div class="product-price">145.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="lifestyle" data-name="bình giữ nhiệt aesthetic">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/E0F7FA/4DD0E1?text=Bình+Giữ+Nhiệt" alt="Bình giữ nhiệt" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h4>Bình giữ nhiệt aesthetic</h4>
+            <p class="product-desc">Đồ dùng hàng ngày xuất hiện trong vlog</p>
+            <div class="product-price">220.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="lifestyle" data-name="sổ tay bullet journal">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/FDF2F8/E879F9?text=Sổ+Tay" alt="Sổ tay" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h4>Sổ tay bullet journal</h4>
+            <p class="product-desc">Cách tôi lên lịch cho ngày bận rộn</p>
+            <div class="product-price">95.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MUSIC -->
+        <div class="product-card" data-category="music" data-name="set pick đàn guitar premium">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/EEF2FF/818CF8?text=Pick+Đàn" alt="Pick đàn" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h4>Set pick đàn guitar premium</h4>
+            <p class="product-desc">Dùng trong clip buổi tập nhạc</p>
+            <div class="product-price">85.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="music" data-name="micro cài áo không dây">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/300x380/FDF2F8/E879F9?text=Micro+Cài+Áo" alt="Micro cài áo" class="product-img" />
+            <div class="product-badge">MinhLee wore</div>
+          </div>
+          <div class="product-info">
+            <h4>Micro cài áo không dây</h4>
+            <p class="product-desc">Setup quay clip hát của tôi</p>
+            <div class="product-price">390.000 ₫</div>
+            <div class="product-actions">
+              <a href="#" class="shop-btn shopee" target="_blank" rel="noopener noreferrer">Shopee</a>
+              <a href="#" class="shop-btn tiktok-shop" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No results -->
+      <div class="no-results" id="noResults" style="display:none;">
+        <span>😢</span>
+        <p>Không tìm thấy sản phẩm phù hợp.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">MinhLee</span>
+          <p>AI KOL · Actress · Model · Singer · Fashion</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">Về tôi</a>
+          <a href="content.html">Nội dung</a>
+          <a href="shop.html">Shop</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="collab.html">Hợp tác</a>
+          <a href="mailto:leeminh1204@gmail.com">Liên hệ</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" aria-label="TikTok" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/183ih5qR2s/" aria-label="Facebook" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 MinhLee AI KOL. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

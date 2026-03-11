@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — MinhLee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">MinhLee</a>
+      <ul class="nav-links">
+        <li><a href="about.html">Về tôi</a></li>
+        <li><a href="content.html">Nội dung</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="portfolio.html" class="nav-active">Portfolio</a></li>
+        <li><a href="collab.html">Hợp tác</a></li>
+        <li><a href="index.html#follow" class="btn-nav">Follow ngay</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:1;">
+      <span class="section-label">Portfolio</span>
+      <h1 class="page-hero-title">Hành trình nghệ thuật<br />của <em>MinhLee</em></h1>
+      <p class="page-hero-sub">Diễn xuất · Thời trang · Âm nhạc — ba thế giới, một con người.</p>
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <section class="portfolio-section bg-white">
+    <div class="container">
+      <div class="portfolio-tabs">
+        <button class="tab-btn active" data-tab="acting">🎬 Diễn xuất</button>
+        <button class="tab-btn" data-tab="modeling">📸 Thời trang & Người mẫu</button>
+        <button class="tab-btn" data-tab="music">🎵 Âm nhạc</button>
+      </div>
+
+      <!-- ACTING -->
+      <div class="tab-panel active" id="tab-acting">
+        <div class="portfolio-grid">
+          <div class="portfolio-item port-wide">
+            <img src="https://placehold.co/800x450/FFE4EC/FF6B9D?text=🎬+Phim+Web+Drama+2024" alt="Web drama 2024" />
+            <div class="portfolio-info">
+              <span class="port-tag">Web Drama</span>
+              <h3>Tên dự án phim 2024</h3>
+              <p>Vai chính · Đạo diễn: [Tên đạo diễn]</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://placehold.co/400x500/FFF0F5/FF69B4?text=🎬+Phim+Truyền+Hình" alt="Phim truyền hình" />
+            <div class="portfolio-info">
+              <span class="port-tag">Phim truyền hình</span>
+              <h3>Tên bộ phim truyền hình</h3>
+              <p>Vai phụ · 2023</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://placehold.co/400x500/EEF2FF/818CF8?text=🎬+TVC+Quảng+Cáo" alt="TVC quảng cáo" />
+            <div class="portfolio-info">
+              <span class="port-tag">TVC / Commercial</span>
+              <h3>TVC thương hiệu thời trang</h3>
+              <p>Diễn viên chính · 2024</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://placehold.co/400x500/F0FFF4/68D391?text=🎬+Short+Film" alt="Short film" />
+            <div class="portfolio-info">
+              <span class="port-tag">Short Film</span>
+              <h3>Short film độc lập</h3>
+              <p>Diễn viên chính · 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODELING -->
+      <div class="tab-panel" id="tab-modeling">
+        <div class="portfolio-grid">
+          <div class="portfolio-item port-wide">
+            <img src="https://placehold.co/800x450/FFF5E4/F6AD55?text=📸+Editorial+Lookbook" alt="Editorial lookbook" />
+            <div class="portfolio-info">
+              <span class="port-tag">Editorial</span>
+              <h3>BST Thu Đông 2024</h3>
+              <p>Photographer: [Tên photographer]</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://placehold.co/400x500/FFE4EC/FF6B9D?text=📸+Street+Style" alt="Street style" />
+            <div class="portfolio-info">
+              <span class="port-tag">Street Style</span>
+              <h3>Street style campaign</h3>
+              <p>Thương hiệu thời trang · 2024</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://placehold.co/400x500/E8F4FD/6CB4E4?text=📸+Lookbook" alt="Lookbook" />
+            <div class="portfolio-info">
+              <span class="port-tag">Lookbook</span>
+              <h3>Lookbook shop MinhLee</h3>
+              <p>BST mùa hè · 2024</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://placehold.co/400x500/FDF2F8/E879F9?text=📸+Magazine" alt="Magazine" />
+            <div class="portfolio-info">
+              <span class="port-tag">Magazine</span>
+              <h3>Cover tạp chí thời trang</h3>
+              <p>Xuất bản · 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MUSIC -->
+      <div class="tab-panel" id="tab-music">
+        <div class="music-list">
+          <div class="music-item">
+            <div class="music-cover">
+              <img src="https://placehold.co/120x120/FFF5E4/F6AD55?text=🎵" alt="Cover song" />
+            </div>
+            <div class="music-info">
+              <h3>Tôi thấy hoa vàng trên cỏ xanh</h3>
+              <p>Cover · Guitar acoustic · 2024</p>
+              <div class="music-tags">
+                <span>Guitar</span>
+                <span>Cover</span>
+                <span>OST phim Việt</span>
+              </div>
+            </div>
+            <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" class="music-play-btn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+              Nghe trên TikTok
+            </a>
+          </div>
+          <div class="music-item">
+            <div class="music-cover">
+              <img src="https://placehold.co/120x120/EEF2FF/818CF8?text=🎹" alt="Piano cover" />
+            </div>
+            <div class="music-info">
+              <h3>River flows in you — Yiruma</h3>
+              <p>Cover · Piano · 2024</p>
+              <div class="music-tags">
+                <span>Piano</span>
+                <span>Cover</span>
+                <span>Classical</span>
+              </div>
+            </div>
+            <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" class="music-play-btn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+              Nghe trên TikTok
+            </a>
+          </div>
+          <div class="music-item">
+            <div class="music-cover">
+              <img src="https://placehold.co/120x120/FDF2F8/E879F9?text=🎵" alt="Original song" />
+            </div>
+            <div class="music-info">
+              <h3>Bài hát sáng tác đầu tiên</h3>
+              <p>Original · Vocal + Guitar · 2024</p>
+              <div class="music-tags">
+                <span>Original</span>
+                <span>Singer-songwriter</span>
+              </div>
+            </div>
+            <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" class="music-play-btn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+              Nghe trên TikTok
+            </a>
+          </div>
+          <div class="music-item">
+            <div class="music-cover">
+              <img src="https://placehold.co/120x120/F0FFF4/68D391?text=🎸" alt="Guitar cover" />
+            </div>
+            <div class="music-info">
+              <h3>Nhạc không lời — buổi tối yên tĩnh</h3>
+              <p>Original · Guitar fingerstyle · 2023</p>
+              <div class="music-tags">
+                <span>Guitar</span>
+                <span>Fingerstyle</span>
+                <span>Instrumental</span>
+              </div>
+            </div>
+            <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" class="music-play-btn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+              Nghe trên TikTok
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collab CTA -->
+  <section class="follow">
+    <div class="follow-blob"></div>
+    <div class="container">
+      <div class="follow-inner">
+        <span class="section-label light">Hợp tác</span>
+        <h2 class="follow-title">Quan tâm đến hợp tác<br />cùng MinhLee?</h2>
+        <p class="follow-sub">Tôi luôn mở cửa cho các dự án phim, fashion campaign và music collaboration.</p>
+        <a href="collab.html" class="btn-primary" style="margin: 0 auto; display: inline-flex;">Liên hệ hợp tác →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">MinhLee</span>
+          <p>AI KOL · Actress · Model · Singer · Fashion</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">Về tôi</a>
+          <a href="content.html">Nội dung</a>
+          <a href="shop.html">Shop</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="collab.html">Hợp tác</a>
+          <a href="mailto:leeminh1204@gmail.com">Liên hệ</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@minh.lee.nhaconoc?_r=1&_t=ZS-94baBFFVwYO" aria-label="TikTok" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.87a4.85 4.85 0 0 1-1.07-.18z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/183ih5qR2s/" aria-label="Facebook" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 MinhLee AI KOL. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
