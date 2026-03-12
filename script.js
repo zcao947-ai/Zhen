@@ -144,7 +144,7 @@ if (sections.length && navAnchors.length) {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute('id');
         navAnchors.forEach(a => {
-          a.style.color = a.getAttribute('href') === `#${id}` ? 'var(--pink)' : '';
+          a.style.color = a.getAttribute('href') === `#${id}` ? 'var(--rose)' : '';
         });
       }
     });
